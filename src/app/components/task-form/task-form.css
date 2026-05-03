@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+.form-container {
+  @apply py-6 px-4;
+}
+
+.form-card {
+  @apply bg-white/95 border border-slate-200 shadow-xl shadow-slate-200/50 rounded-3xl p-8 max-w-2xl mx-auto;
+}
+
+.form-title {
+  @apply text-3xl font-bold text-slate-900 mb-8 text-center;
+}
+
+.form-grid {
+  @apply space-y-6;
+}
+
+.form-group {
+  @apply flex flex-col gap-2;
+}
+
+.form-label {
+  @apply block text-sm font-semibold text-slate-700 uppercase tracking-wide;
+}
+
+.form-input {
+  @apply w-full px-4 py-3 border border-slate-300 rounded-xl bg-white text-slate-900 placeholder-slate-400 transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.form-textarea {
+  @apply w-full px-4 py-3 border border-slate-300 rounded-xl bg-white text-slate-900 placeholder-slate-400 resize-none transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.form-actions {
+  @apply flex flex-row gap-4 pt-4 flex-nowrap;
+}
+
+.btn-submit {
+  @apply flex-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold py-3 px-6 rounded-xl transition duration-200 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50;
+}
+
+.btn-reset {
+  @apply flex-1 bg-slate-100 text-slate-700 font-semibold py-3 px-6 rounded-xl transition duration-200 hover:bg-slate-200 active:bg-slate-300;
+}
+
+.error-message {
+  @apply text-sm text-red-500 -mt-5;
+}

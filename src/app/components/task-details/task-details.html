@@ -1,0 +1,9 @@
+<div class="container task-card">
+    <h1 class="text-2xl">Task Details</h1>
+    <div>
+        <h2><strong>Title :</strong> {{ task?.title }}</h2>
+        <p><strong>Description:</strong> {{ task?.description }}</p>
+        <p><strong>Status:</strong> {{ task?.status }}</p>
+        <button class="btn-back cursor-pointer" (click)="goBackToList()">Back to List</button>
+    </div>
+</div>
