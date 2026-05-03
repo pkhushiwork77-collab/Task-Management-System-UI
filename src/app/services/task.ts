@@ -7,7 +7,7 @@ import { inject, Injectable } from '@angular/core';
 export class Task {
     private http = inject(HttpClient);
 
-    private readonly apiUrl = 'http://127.0.0.1:8000/api/tasks';
+    private readonly apiUrl = 'https://task-management-system-p2sg.onrender.com/api/tasks';
 
     getTask(params: any ={}) {
       return this.http.get(this.apiUrl, { params });
